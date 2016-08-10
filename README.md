@@ -1,0 +1,2 @@
+# SmoothRecyclerView
+类似于Viewpager整屏滑动效果 同时有RecyclerView的viewholder缓存特性
