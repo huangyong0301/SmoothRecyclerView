@@ -68,13 +68,13 @@ public class SmoothRecyclerView extends RecyclerView {
                     //正在补间滑动
                     mDraggingX = 0;
                 }
-            } else if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+            } else if (newState == RecyclerView.SCROLL_STATE_SETTLING) {
                 if (mState == RecyclerView.SCROLL_STATE_IDLE) {
                     mDraggingX = 0;
                     //停止滑动
                 } else if (mState == RecyclerView.SCROLL_STATE_DRAGGING) {
                     //正在滑动
-                    smooth(mDraggingX);
+
                 } else if (mState == RecyclerView.SCROLL_STATE_SETTLING) {
                     //正在补间滑动
                     mDraggingX = 0;
